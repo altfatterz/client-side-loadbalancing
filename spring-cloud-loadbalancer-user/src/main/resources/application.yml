@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: user-app
+
+  cloud:
+    discovery.client.simple.instances:
+      say-hello:
+        - instanceId: say-hello1
+          uri: http://localhost:8080
+        - instanceId: say-hello2
+          uri: http://localhost:8081
+
+    loadbalancer:
+      configurations: request-based-sticky-session
+      sticky-session:
+        add-service-instance-cookie: true
+
+
+server.port: 9090
+
+#logging.level:
+#  org.springframework.web: debug
