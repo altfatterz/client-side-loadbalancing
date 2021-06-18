@@ -11,5 +11,6 @@
     <modules>
         <module>spring-cloud-loadbalancer-say-hello</module>
         <module>spring-cloud-loadbalancer-user</module>
+        <module>spring-cloud-loadbalancer-reactive-user</module>
     </modules>
 </project>

@@ -14,6 +14,7 @@ spring:
       configurations: request-based-sticky-session
       sticky-session:
         add-service-instance-cookie: true
+        instance-id-cookie-name: instanceId
 
 
 server.port: 9090

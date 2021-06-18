@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: reactive-user-app
+
+  cloud:
+#    discovery.client.simple.instances:
+#      say-hello:
+#        - instanceId: say-hello1
+#          uri: http://localhost:8080
+#        - instanceId: say-hello2
+#          uri: http://localhost:8081
+#
+#    loadbalancer:
+#      configurations: request-based-sticky-session
+      sticky-session:
+        add-service-instance-cookie: true
+#        instance-id-cookie-name: instanceId
+
+server:
+  port: 9091
